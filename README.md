@@ -15,7 +15,6 @@ Ce projet implémente une analyse de sentiments sur des tweets en utilisant Pyth
 
 - Python
 - Pandas (manipulation des données)
-- Matplotlib (visualisation)
 - Bibliothèques standards Python (string)
 
 ## 📊 Fonctionnalités
@@ -43,7 +42,7 @@ Ce projet implémente une analyse de sentiments sur des tweets en utilisant Pyth
 
 1. Assurez-vous d'avoir Python et les bibliothèques requises installées:
    ```bash
-   pip install pandas 
+   pip install pandas
    ```
 2. Placez vos fichiers de données (tweets et listes de mots) dans le même répertoire
 3. Exécutez le notebook Jupyter `project_twitter.ipynb`
