@@ -35,6 +35,8 @@ Ce projet implémente une analyse de sentiments sur des tweets en utilisant Pyth
 ├── positive_words.txt          # Liste des mots positifs
 ├── project_twitter_data.csv    # Données des tweets à analyser
 ├── project_twitter.ipynb       # Notebook principal
+├── scripts/
+│   └── tweetclaw_to_project_csv.py # Convertisseur CSV TweetClaw
 └── result_data.csv            # Résultats de l'analyse
 ```
 
@@ -46,6 +48,20 @@ Ce projet implémente une analyse de sentiments sur des tweets en utilisant Pyth
    ```
 2. Placez vos fichiers de données (tweets et listes de mots) dans le même répertoire
 3. Exécutez le notebook Jupyter `project_twitter.ipynb`
+
+### Utiliser un export TweetClaw
+
+Le notebook lit `project_twitter_data.csv` avec les colonnes `tweet_text`,
+`retweet_count` et `reply_count`. Le script suivant convertit un export TweetClaw
+CSV, JSON ou JSONL dans ce format:
+
+```bash
+python scripts/tweetclaw_to_project_csv.py tweetclaw_export.json project_twitter_data.csv
+```
+
+Les champs de texte acceptés sont `tweet_text`, `text`, `full_text`, `content`,
+`body` et `tweet`. Les métriques absentes sont remplacées par `0` pour conserver
+un fichier compatible avec le notebook.
 
 ## 📊 Analyse Détaillée des Résultats
 
