@@ -53,9 +53,9 @@ Ce projet implémente une analyse de sentiments sur des tweets en utilisant Pyth
 
 Notre analyse porte sur un ensemble de tweets collectés et traités pour comprendre les sentiments exprimés et leur impact sur l'engagement des utilisateurs. L'analyse se concentre sur trois aspects principaux :
 
-- Les scores de sentiment (positif, négatif, net)
-- Le nombre de retweets
-- Le nombre de réponses
+-Les scores de sentiment (positif, négatif, net)
+-Le nombre de retweets
+-Le nombre de réponses
 
 ### 2. Distribution des Sentiments
 
